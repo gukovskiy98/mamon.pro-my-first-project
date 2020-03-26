@@ -1,7 +1,10 @@
 html,
 body {
-  background-color: #222;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 *,
@@ -10,4 +13,89 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.content-container {
+  width: 1186px;
+  margin: 0 auto;
+}
+
+.page-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 120px 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-image {
+  width: 58px;
+  height: 58px;
+  margin-right: 25px;
+  background: url("../img/logo.svg") no-repeat;
+  background-size: contain;
+}
+
+.logo-sign {
+  color: #202020;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.page-menu > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-menu > ul > li {
+  margin: 0 18px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #202020;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.href-btn {
+  background-color: #5528ff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+h1 {
+  font-size: 57px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-header-bottom > p {
+  max-width: 740px;
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+
+.page-header-bottom > .href-btn {
+  display: inline-block;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 15px 60px;
+  margin-bottom: 100px;
 }

@@ -65,7 +65,6 @@ body {
 .page-menu > ul > li {
   margin: 0 18px;
   font-weight: 700;
-  font-size: 14px;
   color: #202020;
 }
 
@@ -85,12 +84,14 @@ h1 {
   font-size: 57px;
   font-weight: 700;
   text-align: center;
+  color: #202020;
 }
 
 .page-header-bottom > p {
   max-width: 740px;
   font-size: 32px;
   margin-bottom: 70px;
+  color: #4f4f4f;
 }
 
 .page-header-bottom > .href-btn {
@@ -110,7 +111,8 @@ h1 {
 }
 
 h2 {
-  position: absolute;
+  position: relative;
+  display: inline-block;
   padding: 0 40px 0 20px;
   font-weight: 300;
   text-transform: uppercase;
@@ -118,4 +120,59 @@ h2 {
   background-color: white;
   top: -14px;
   left: -20px;
+}
+
+.services-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.services-item {
+  margin-left: 160px;
+  margin-bottom: 85px;
+  flex-basis: 310px;
+  position: relative;
+}
+
+/* Убираем лишние нижние отступы у последних элементов */
+.services-item:last-of-type, .services-item:nth-last-of-type(2) {
+  margin-bottom: 0;
+}
+
+.services-item > p {
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+
+.services-item::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 160px;
+  height: 110px;
+  left: -160px;
+}
+
+.services-mobile::before {
+  background: url("../img/services/phone.svg") no-repeat center;
+}
+
+.services-web::before {
+  background: url("../img/services/union.svg") no-repeat center;
+}
+
+.services-product::before {
+  background: url("../img/services/layers.svg") no-repeat center;
+}
+
+.services-quality::before {
+  background: url("../img/services/test.svg") no-repeat center;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 20px;
 }

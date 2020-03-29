@@ -126,20 +126,20 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 100px 0;
+  margin: 100px 0 15px 0;
 }
 
 .services-item {
-  margin-left: 160px;
-  margin-bottom: 85px;
-  flex-basis: 310px;
+  padding: 0 0 0 160px;
+  margin: 0 0 85px 0;
+  flex-basis: 470px;
   position: relative;
 }
-
-/* Убираем лишние нижние отступы у последних элементов */
+/* 
+Убираем лишние нижние отступы у последних элементов
 .services-item:last-of-type, .services-item:nth-last-of-type(2) {
   margin-bottom: 0;
-}
+} */
 
 .services-item > p {
   line-height: 1.5;
@@ -152,7 +152,7 @@ h2 {
   position: absolute;
   width: 160px;
   height: 110px;
-  left: -160px;
+  left: 0px;
 }
 
 .services-mobile::before {
@@ -175,4 +175,23 @@ h3 {
   font-weight: 400;
   font-size: 28px;
   margin-bottom: 20px;
+}
+
+.clients-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.clients-block > a {
+  transition: filter 0.2s ease-out;
+  width: 250px;
+  height: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.clients-block > a:hover {
+  filter: drop-shadow(0 0 20px #5528ff);
 }

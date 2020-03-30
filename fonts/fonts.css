@@ -1,2 +1,7 @@
 /* Ubuntu с поддержкой кириллицы*/
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap&subset=cyrillic");
+
+@font-face {
+  src: url("socials.ttf");
+  font-family: "Socials";
+}

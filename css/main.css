@@ -28,6 +28,12 @@ iframe {
   justify-content: flex-start;
 }
 
+.page-header {
+  position: relative;
+  z-index: 99999;
+} 
+}
+
 .content-container {
   width: 1186px;
   margin: 0 auto;

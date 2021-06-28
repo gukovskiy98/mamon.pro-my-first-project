@@ -8,10 +8,6 @@ body {
   line-height: 1.5;
 }
 
-iframe {
-  max-width: 100% !important
-}
-
 *,
 *::before,
 *::after {
